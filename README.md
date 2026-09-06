@@ -42,24 +42,38 @@ Health functions:
 Function: ApplyDamage(float DamageAmount)
 
 Subtract DamageAmount from Health.
+
 If Health <= 0 → call OnDeath event (disable input, play animation, respawn or show Game Over).
+
 Update HUD (call event to update widget binding).
+
 Function: AddHealth(float HealAmount)
 
 Add to Health but clamp to MaxHealth.
+
 Update HUD.
+
 Score management:
 
 # Function: AddScore(int Amount)
+
   Score = Score + Amount → update HUD.
 # BP_Collectable → OnComponentBeginOverlap (Sphere)
+
 Other Actor → Cast To BP_PlayerCharacter
+
 Branch (if cast success)
+
 Call AddScore(ScoreValue) on Player Character
+
 If GiveHealth > 0 Call AddHealth(GiveHealth)
+
 Play Sound at Location
+
 Spawn Emitter at Location
+
 Destroy Actor
+
 # BP_PlayerCharacter → AddScore (Custom Event)
  
  Input: Amount (int)
