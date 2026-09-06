@@ -72,6 +72,11 @@ If Health <= 0
 Call OnDeath (Disable Input; show Game Over)
 Update HUD: Call UpdateHealthDisplay
 # Output:
-Screenshot 2025-11-13 132833 Screenshot (6) Screenshot (10) Screenshot 2025-11-13 134127
-RESULT
+
+<img width="613" height="236" alt="image" src="https://github.com/user-attachments/assets/631a0f71-3272-4607-9e7a-1cf259ebc288" />
+<img width="1035" height="640" alt="image" src="https://github.com/user-attachments/assets/0773a9b6-e1a9-4721-8fcd-4f6aab6777bb" />
+<img width="988" height="482" alt="image" src="https://github.com/user-attachments/assets/0a93f86f-d8fb-412e-87fe-0dc258ce563d" />
+<img width="1029" height="652" alt="image" src="https://github.com/user-attachments/assets/cbc3373d-1589-4e88-a7b8-03f99d90f269" />
+
+# RESULT:
 The AI character successfully roams within the defined NavMesh area, choosing random destinations at intervals using the Behavior Tree logic.
