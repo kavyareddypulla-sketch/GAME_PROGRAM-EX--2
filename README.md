@@ -15,20 +15,30 @@ Game flow — pickup increments Score, maybe plays sound/particle and destroys t
 
 # 1. Project & Input Setup
 Create a Third Person Blueprint project (or use your existing ThirdPersonMap).
+
 Open Project Settings → Input and ensure these mappings exist:
+
 MoveForward (W / Up arrow)
+
 MoveRight (A/D or Left/Right)
+
 Turn / LookUp (mouse)
+
 Jump (SpaceBar)
+
 Run (Left Shift) — optional if you want sprint
+
 # 2. Player Character Blueprint (BP_PlayerCharacter)
 
 Duplicate the existing ThirdPersonCharacter (or create a new Character blueprint) and name it BP_PlayerCharacter.
 Variables to add (Expose where useful):
 
  Score (Integer) — default 0
+ 
  MaxHealth (Float) — e.g. 100.0
+ 
  Health (Float) — default equal to MaxHealth
+ 
  bIsRunning (Boolean) — if you want sprinting
  
  # Movement (in Event Graph):
@@ -37,7 +47,7 @@ Variables to add (Expose where useful):
  Use Turn and LookUp to rotate camera.
  If using Run: on Run Pressed set Max Walk Speed on the Character Movement component (e.g. 1200) and reset on Released(600 default).
 
-Health functions:
+# Health functions:
 
 Function: ApplyDamage(float DamageAmount)
 
