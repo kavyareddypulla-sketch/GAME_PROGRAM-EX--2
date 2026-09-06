@@ -61,10 +61,15 @@ Play Sound at Location
 Spawn Emitter at Location
 Destroy Actor
 # BP_PlayerCharacter → AddScore (Custom Event)
-Input: Amount (int)
+ 
+ Input: Amount (int)
+
 Score = Score + Amount
+
 Call UpdateScoreDisplay on the HUD widget reference
+
 (Optional) Play pickup sound, animate, or show floating text
+
 # BP_PlayerCharacter → ApplyDamage (Custom Event)
  Input: Damage (float)
  
