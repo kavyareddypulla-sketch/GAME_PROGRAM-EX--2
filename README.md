@@ -66,11 +66,16 @@ Score = Score + Amount
 Call UpdateScoreDisplay on the HUD widget reference
 (Optional) Play pickup sound, animate, or show floating text
 # BP_PlayerCharacter → ApplyDamage (Custom Event)
-Input: Damage (float)
-Health = Health - Damage
-If Health <= 0
-Call OnDeath (Disable Input; show Game Over)
+ Input: Damage (float)
+ 
+ Health = Health - Damage
+ 
+ If Health <= 0
+ 
+ Call OnDeath (Disable Input; show Game Over)
+
 Update HUD: Call UpdateHealthDisplay
+
 # Output:
 
 <img width="613" height="236" alt="image" src="https://github.com/user-attachments/assets/631a0f71-3272-4607-9e7a-1cf259ebc288" />
