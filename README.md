@@ -7,10 +7,16 @@ Create a playable third-person character in Unreal Engine that can move and run,
 # Overview:
 
 Player Character (BP_PlayerCharacter) — handles movement, input, health, and overlaps with collectables.
+
 Collectable (BP_Collectable) — simple actor with collision that gives score (and optionally health) when overlapped.
+
 UI (WBP_HUD) — UMG Widget showing Score and Health values.
+
 GameMode / PlayerState — (optional) hold persistent Score/HighScore across respawns.
-Game flow — pickup increments Score, maybe plays sound/particle and destroys the collectable; health decreases on damage, and player dies or respawns when health ≤ 0.
+
+Game flow — pickup increments Score, maybe plays sound/particle and destroys the collectable; health decreases on damage, 
+and player dies or respawns when health ≤ 0.
+
 # Step-by-step Implementation (Blueprint-first)
 
 # 1. Project & Input Setup
